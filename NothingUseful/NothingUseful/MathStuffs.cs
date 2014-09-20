@@ -6,7 +6,7 @@ namespace NothingUseful
 	{
 		public static void Stuff ()
 		{
-			Console.SetWindowSize (400, 400);
+
 			Console.WriteLine ();
 			Console.WriteLine ("Hello and welcome to MathStuffs!");
 			Console.WriteLine ("It's alot like what it sounds, lets get started!");
@@ -71,6 +71,62 @@ namespace NothingUseful
 			}
 			int z2 = x2 - y2;
 			Console.WriteLine("And " + x2.ToString() + " - " + y2.ToString() + " = " +z2.ToString());
+
+			Console.WriteLine ("");
+			Console.Write ("Press ENTER to go onto multiplication!");
+			Console.ReadLine ();
+
+			valid = false;
+			int x3 = 0;
+			int y3 = 0;
+			Console.WriteLine ("Gotta to the good ol' X and Y again.");
+			while (valid == false) {
+				Console.Write ("Enter X : ");
+				if (int.TryParse (Console.ReadLine (), out x3)) {
+					valid = true;
+				} else {
+					Console.WriteLine ("Please enter a valid number.");
+				}
+			}
+			valid = false;
+			while (valid == false) {
+				Console.WriteLine ("Enter Y : ");
+				if (int.TryParse (Console.ReadLine (), out y3)) {
+					valid = true;
+				} else {
+					Console.WriteLine ("Please enter a valid number");
+				}
+			}
+			int z3 = x3 * y3;
+			Console.WriteLine (x3.ToString () + " x " + y3.ToString () + " = " + z3.ToString ());
+
+			Console.WriteLine ();
+			Console.WriteLine ("Last but not least dividing! PRESS ENTER ALREADY!");
+			Console.ReadLine ();
+
+			valid = false;
+			int x4 = 0;
+			int y4 = 0;
+			Console.WriteLine ("Again with X's and the Y's... Yeesh.");
+			while (valid == false) {
+				Console.Write ("Enter X : ");
+				if (int.TryParse (Console.ReadLine (), out x4)) {
+					valid = true;
+				} else {
+					Console.WriteLine ("Please enter a valid number");
+				}
+			}
+			valid = false;
+			while (valid == false) {
+				Console.Write ("Enter Y : ");
+				if (int.TryParse (Console.ReadLine (), out y4)) {
+					valid = true;
+				} else {
+					Console.WriteLine ("Please enter a valid number");
+				}
+			}
+			int z4 = x4 / y4;
+			Console.WriteLine(x4.ToString() + " / " + y4.ToString() + " = " + z4.ToString());
 
 			Console.Write ("END");
 			Console.Read();
