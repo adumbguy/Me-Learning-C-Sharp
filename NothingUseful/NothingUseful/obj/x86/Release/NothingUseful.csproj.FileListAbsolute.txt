@@ -1,0 +1,4 @@
+C:\Users\Eddie\Documents\Projects\itsHappening\Me-Learning-C-\NothingUseful\NothingUseful\bin\Release\NothingUseful.exe
+C:\Users\Eddie\Documents\Projects\itsHappening\Me-Learning-C-\NothingUseful\NothingUseful\bin\Release\NothingUseful.pdb
+C:\Users\Eddie\Documents\Projects\itsHappening\Me-Learning-C-\NothingUseful\NothingUseful\obj\x86\Release\NothingUseful.exe
+C:\Users\Eddie\Documents\Projects\itsHappening\Me-Learning-C-\NothingUseful\NothingUseful\obj\x86\Release\NothingUseful.pdb

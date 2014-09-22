@@ -126,8 +126,7 @@ namespace NothingUseful
 				}
 			}
 			int z4 = x4 / y4;
-			Console.WriteLine(x4.ToString() + " / " + y4.ToString() + " = " + z4.ToString());
-
+			Console.WriteLine (x4.ToString () + "/ " + y4.ToString () + " = " + z4.ToString ());
 			Console.Write ("END");
 			Console.Read();
 		}

@@ -12,10 +12,31 @@ namespace NothingUseful
 			Console.WriteLine ("Anyways, I planned on saving most of my learning in this project!");
 			Console.WriteLine ("Oh, and don't expect it to look pretty either, I'm not super awesome at this yet.");
 			Console.WriteLine ("");
-			Console.Write ("Press ENTER to get on with it...");
-			Console.ReadLine();
+			Console.WriteLine ("Here we have a choice of two programs [1. MathStuffs] or [2. FileMania]");
+			Console.WriteLine ("Just type the number of the one you want to run");
+			Console.Write ("Take your pick : ");
+			bool valid = false;
+			while (valid == false) {
+				string choice = Console.ReadLine ();
 
-			MathStuffs.Stuff ();
+				switch (choice) {
+				case "1":
+					valid = true;
+					MathStuffs.Stuff ();
+					break;
+				case "2":
+					valid = true;
+					FileMan.FileMania ();
+
+					break;
+				default:
+					Console.WriteLine ("Come on man, I gave you the only choices");
+					break;
+				}
+			}
+
+			//FileMan.FileMania ();
+			//MathStuffs.Stuff ();
 		}
 	}
 }
