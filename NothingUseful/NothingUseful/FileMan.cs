@@ -55,8 +55,10 @@ namespace NothingUseful
 							end++;
 							break;
 						case ConsoleKey.N:
-							overWrite = false;
-							end++;
+							Console.WriteLine ();
+							Console.WriteLine (" Operation cancled, press any key to exit");
+							Console.ReadKey ();
+							return;
 							break;
 						default:
 							Console.WriteLine (" Please use either y or n.");
@@ -65,13 +67,7 @@ namespace NothingUseful
 					}
 				}
 				if (overWrite == false) {
-					if (writing == false) {
-						Console.WriteLine ();
-						Console.WriteLine (" Operation cancled, press any key to exit");
-						Console.ReadKey ();
-						return;
-					} else {
-					}
+				
 				} else {
 					Console.WriteLine ();
 					Console.WriteLine ("Overwriting {0}", fileName);
@@ -84,7 +80,6 @@ namespace NothingUseful
 			try{
 				string[] readBuffer = System.IO.File.ReadAllLines(filePath);
 				Console.WriteLine("Printing {0} : ", fileName);
-				Console.WriteLine("[Line breaks are represented as '~']");
 				foreach (string b in readBuffer){
 					Console.Write(b + Environment.NewLine);
 				}
